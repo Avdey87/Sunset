@@ -49,6 +49,7 @@ public class SunsetFragment extends Fragment {
         });
         return view;
     }
+
     //
     private void startAnimation() {
         float sunYstart = mSunView.getTop();
@@ -77,6 +78,7 @@ public class SunsetFragment extends Fragment {
                 .with(sunsetSkyAnimator)
                 .before(nightSkyAnimator);
         animatorSet.start();
+
     }
 
 }
